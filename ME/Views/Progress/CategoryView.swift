@@ -9,6 +9,9 @@ import SwiftUI
 
 struct CategoryView: View {
     
+    // Do I use an environment object here?
+    //@EnvironmentObject var modelData: ModelData
+    
     var category: Category
     //var color = UIColor.red
 //    var category_name: String
@@ -31,9 +34,15 @@ struct CategoryView: View {
             HStack {
                 Text(category.name)
                     .font(.title2)
+                    .foregroundColor(Color(UIColor.black))
+                
+                Image(systemName: "chevron.forward")
+                    .foregroundColor(Color(UIColor.gray))
+                
                 Spacer()
                 Text("\(Int(category.completion * 100))%")
                     .font(.title2)
+                    .foregroundColor(Color(UIColor.black))
             }
             
             GeometryReader { geometry in
@@ -59,12 +68,9 @@ struct CategoryView: View {
 
 struct CategoryView_Previews: PreviewProvider {
     
-    static var categories = ModelData().categories
-    
-//    static var preview_category = Category(id: 0, name: "Prepare Essentials", completion: 0.8, color: "systemTeal", items: [CategoryItem]())
+    static var modelData = ModelData()
     
     static var previews: some View {
-        CategoryView(category: categories[2])
-//        CategoryView(category_name: "Prepare Essentials", category_completion: 0.8, category_color: Color(UIColor.systemTeal))
+        CategoryView(category: modelData.categories[2])
     }
 }
