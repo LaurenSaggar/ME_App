@@ -9,6 +9,9 @@ import Foundation
 import Combine
 
 final class ModelData: ObservableObject {
+    
+    @Published var profile = Profile.default
+    
     @Published var categories: [Category] = [
         Category(id: 1, name: "Period Essentials", completion: 0.80, color: "systemPink", items: [
             CategoryItem(id: 1, categoryName: "Period Essentials", itemName: "Get pads", isChecked: true),

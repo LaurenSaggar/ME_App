@@ -17,6 +17,10 @@
 		433BD5B02AB79BC30039E431 /* CategoryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BD5AF2AB79BC30039E431 /* CategoryDetailsView.swift */; };
 		433BD5B22AB7A3EB0039E431 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BD5B12AB7A3EB0039E431 /* ModelData.swift */; };
 		433BD5B62AB7A9FF0039E431 /* CategoryItemButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BD5B52AB7A9FF0039E431 /* CategoryItemButton.swift */; };
+		433BD5BD2AC2575D0039E431 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BD5BC2AC2575D0039E431 /* Profile.swift */; };
+		433BD5BF2AC260AF0039E431 /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BD5BE2AC260AF0039E431 /* ProfileHost.swift */; };
+		433BD5C12AC261500039E431 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BD5C02AC261500039E431 /* ProfileSummary.swift */; };
+		433BD5C32AC3AD740039E431 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433BD5C22AC3AD740039E431 /* ProfileEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		433BD5AF2AB79BC30039E431 /* CategoryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsView.swift; sourceTree = "<group>"; };
 		433BD5B12AB7A3EB0039E431 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		433BD5B52AB7A9FF0039E431 /* CategoryItemButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemButton.swift; sourceTree = "<group>"; };
+		433BD5BC2AC2575D0039E431 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		433BD5BE2AC260AF0039E431 /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		433BD5C02AC261500039E431 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		433BD5C22AC3AD740039E431 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,7 @@
 			children = (
 				433BD5952AA96AD50039E431 /* ContentView.swift */,
 				433BD5A62AA96D100039E431 /* Progress */,
+				433BD5B72ABF98ED0039E431 /* Profile */,
 				433BD5B32AB7A9610039E431 /* Helpers */,
 			);
 			path = Views;
@@ -105,6 +114,7 @@
 			children = (
 				433BD5AA2AAFEE580039E431 /* Category.swift */,
 				433BD5B12AB7A3EB0039E431 /* ModelData.swift */,
+				433BD5BC2AC2575D0039E431 /* Profile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -115,6 +125,16 @@
 				433BD5B52AB7A9FF0039E431 /* CategoryItemButton.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		433BD5B72ABF98ED0039E431 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				433BD5BE2AC260AF0039E431 /* ProfileHost.swift */,
+				433BD5C02AC261500039E431 /* ProfileSummary.swift */,
+				433BD5C22AC3AD740039E431 /* ProfileEditor.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +208,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				433BD5962AA96AD50039E431 /* ContentView.swift in Sources */,
+				433BD5BD2AC2575D0039E431 /* Profile.swift in Sources */,
+				433BD5C32AC3AD740039E431 /* ProfileEditor.swift in Sources */,
+				433BD5C12AC261500039E431 /* ProfileSummary.swift in Sources */,
 				433BD5AB2AAFEE580039E431 /* Category.swift in Sources */,
 				433BD5B02AB79BC30039E431 /* CategoryDetailsView.swift in Sources */,
 				433BD5A92AA97CD20039E431 /* ProgressView.swift in Sources */,
@@ -195,6 +218,7 @@
 				433BD5942AA96AD50039E431 /* MEApp.swift in Sources */,
 				433BD5A42AA96B780039E431 /* CategoryView.swift in Sources */,
 				433BD5B22AB7A3EB0039E431 /* ModelData.swift in Sources */,
+				433BD5BF2AC260AF0039E431 /* ProfileHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

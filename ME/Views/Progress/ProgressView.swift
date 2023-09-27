@@ -10,6 +10,7 @@ import SwiftUI
 struct ProgressView: View {
     
     @EnvironmentObject var modelData: ModelData
+    @State private var showingProfile = false
     
     var body: some View {
         NavigationView {
@@ -26,6 +27,24 @@ struct ProgressView: View {
                     }
                 }
             }.padding()
+            
+                .toolbar {
+//                    NavigationLink {
+//                        ProfileHost()
+//                    }
+                    
+                    Button {
+                        showingProfile.toggle()
+                    } label: {
+                        Label("User Profile", systemImage: "person.crop.circle")
+                    }
+                }
+            
+                // Pop-up for profile view
+                .sheet(isPresented: $showingProfile) {
+                    ProfileHost()
+                        .environmentObject(modelData)
+                }
         }
     }
 }
